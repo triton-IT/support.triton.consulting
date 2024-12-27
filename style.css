@@ -1,0 +1,141 @@
+
+/* Réinitialisation et styles de base */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+font-family: 'Nunito', sans-serif;
+background-color: #f7f9fa;
+color: #333;
+scroll-behavior: smooth;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* En-tête (header) avec effet "hero" */
+header {
+background: linear-gradient(45deg, #118AB2, #06D6A0);
+color: #fff;
+padding: 60px 20px;
+text-align: center;
+min-height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+header h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+font-weight: 600;
+letter-spacing: 1.5px;
+}
+
+header p {
+font-size: 1.2rem;
+max-width: 600px;
+line-height: 1.6;
+}
+
+/* Section principale de contenu */
+main {
+max-width: 1200px;
+margin: -50px auto 0 auto; /* Remonte la section au-dessus du pli pour un effet "carte" */
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+padding: 40px 20px;
+position: relative;
+z-index: 2; /* Pour qu’il passe au-dessus de la zone "hero" */
+}
+
+main h2 {
+font-size: 2rem;
+color: #073B4C;
+margin-bottom: 20px;
+text-align: center;
+font-weight: 600;
+}
+
+main p {
+font-size: 1rem;
+color: #555;
+line-height: 1.7;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.contact-info {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+margin-top: 30px;
+}
+
+.contact-card {
+background-color: #f7f9fa;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+padding: 20px 30px;
+width: 280px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+margin-bottom: 10px;
+font-size: 1.2rem;
+color: #333;
+}
+
+.contact-card a {
+color: #118AB2;
+font-weight: 600;
+transition: color 0.3s ease;
+display: inline-block;
+margin-top: 5px;
+}
+
+.contact-card a:hover {
+color: #073B4C;
+}
+
+/* Pied de page */
+footer {
+background-color: #073B4C;
+color: #fff;
+text-align: center;
+padding: 20px 10px;
+margin-top: 40px;
+}
+
+footer p {
+font-size: 0.9rem;
+margin: 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+header h1 {
+    font-size: 2rem;
+}
+header p {
+    font-size: 1rem;
+}
+main {
+    margin: -60px 20px 0 20px;
+}
+}
